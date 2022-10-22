@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  background: hsl(217, 54%, 11%);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: hsl(216, 50%, 16%);
+  width: 22rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 0.514);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-content-wrapper {
+  color: hsl(215, 51%, 70%);
+}
+
+.content-heading {
+  color: hsl(0, 0%, 100%);
+  margin-top: 1.1rem;
+  font-size: 1.39rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content-heading:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.content-info {
+  margin-top: 1.1rem;
+  font-size: 1.13rem;
+  line-height: 1.6rem;
+  font-weight: 200;
+}
+
+.time-quantity-wrapper {
+  margin-top: 1.41rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  font-size: 1.05rem;
+}
+
+.ethereum-image {
+  margin-right: 0.4rem;
+  width: 0.72rem;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  font-size: 1.049rem;
+}
+
+.clock-image {
+  margin-right: 0.4rem;
+  width: 1.22rem;
+}
+
+.creater-info-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.creater-profile-image {
+  width: 2.1rem;
+  margin-right: 1.03rem;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.creater-info {
+  font-size: 1.015rem;
+}
+
+.creater-name {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.creater-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
